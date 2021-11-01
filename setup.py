@@ -1,4 +1,3 @@
-bstr = ""
 coro = {
     "1": "001",
     "2": "010",
@@ -14,7 +13,9 @@ coro = {
     ".": ""
 }
 while True:
+    bstr = ""
     inp = input ("8=D  ")
     for n in inp:
         bstr += coro[n]
-    print (f"{bin(int(bstr))}")
+    print (bstr)
+
