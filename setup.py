@@ -12,10 +12,18 @@ coro = {
     " ": "",
     ".": ""
 }
+
 while True:
+    binstr = ""
     bstr = ""
     inp = input ("8=D  ")
     for n in inp:
         bstr += coro[n]
-    print (bstr)
-
+    for count,ele in enumerate(bstr,1):
+        binstr += ele
+        if count % 8 == 0:
+            binstr += " "
+    print(binstr)
+    
+    
+    
